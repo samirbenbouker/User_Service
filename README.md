@@ -10,7 +10,7 @@ WARNING IN FILE APPLICATION.PROPERTIES ADD USERNAME AND PASSWORD FOR YOUR DATABA
 
 ## Endpoints API:
 ```
-PATH: localhost:8080/api/v1/
+PATH: localhost:8080/api/v1
 ```
 
 - `GET /users` return all users we found in database.
