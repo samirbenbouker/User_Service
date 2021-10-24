@@ -13,7 +13,7 @@ WARNING IN FILE APPLICATION.PROPERTIES ADD USERNAME AND PASSWORD FOR YOUR DATABA
 PATH: localhost:8080/api/v1/
 ```
 
-### Get All Users
+- ### Get All Users
 _This endpoint return all users we found in database_
 <table>
   <tr>
