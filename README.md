@@ -13,7 +13,13 @@ WARNING IN FILE APPLICATION.PROPERTIES ADD USERNAME AND PASSWORD FOR YOUR DATABA
 PATH: localhost:8080/api/v1/
 ```
 
-- ### Get All Users
+- `GET /users` return all users we found in database.
+- `GET /token/refresh` can update the JWT of the registered user.
+- `POST /user/save` can save a user in your database passing in Request Body a JSON File.
+- `POST /role/save` can save a role in your database passing in Request Body a JSON File.
+- `POST /role/addtouser` can add a role in one user passing in Request Body a AppRole Object.
+
+### Get All Users
 _This endpoint return all users we found in database_
 <table>
   <tr>
@@ -21,6 +27,20 @@ _This endpoint return all users we found in database_
   </tr>
   <tr>
     <th>Get /users </th>
+  </tr>
+  <tr>
+    <td>No parameters required</td>
+  </tr>
+</table>
+
+### Get Refresh Token
+_Can update the JWT of the registered user_
+<table>
+  <tr>
+    <th>Response: void</th>
+  </tr>
+  <tr>
+    <th>Get /token/refresh </th>
   </tr>
   <tr>
     <td>No parameters required</td>
@@ -96,7 +116,7 @@ _This endpoint can add a role in one user passing in Request Body a AppRole Obje
   </tr>
 </table>
 
-### Get All Users
+### Get Refresh Token
 _you can update the JWT of the registered user_
 <table>
   <tr>
